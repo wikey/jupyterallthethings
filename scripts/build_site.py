@@ -244,7 +244,7 @@ def home_page() -> str:
       <div class="hero__content">
         <p class="eyebrow">Jupyter notebooks · Python · synthetic data</p>
         <h1>Local, research-grade analysis of student assessment data</h1>
-        <p class="hero__lede">Python running on your computer makes private, professional-grade analysis possible. An LLM lets you build that workflow without already knowing Python—helping you write and understand the code while your student data stays local.</p>
+        <p class="hero__lede">Python running on your computer gives you private, professional-grade analysis. You do not need to know—or learn—Python to use it: an LLM can write, run, and revise the code while you guide the questions, review the work, and interpret the results. Your student data stays local.</p>
         <div class="button-row">
           <a class="button" href="notebooks/{LESSONS[0]['slug']}">Start the workshop</a>
           <a class="button button--secondary" href="downloads/data-analysis-workshop.zip" download>Download all files</a>

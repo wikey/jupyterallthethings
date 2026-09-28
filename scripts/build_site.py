@@ -244,7 +244,7 @@ def home_page() -> str:
       <div class="hero__content">
         <p class="eyebrow">Jupyter notebooks · Python · synthetic data</p>
         <h1>Local, research-grade analysis of student assessment data</h1>
-        <p class="hero__lede">See how Python can turn raw assessment exports into cohort trends, paired-growth analysis, subgroup summaries, and a presentation-ready dashboard—while the data stays on your machine.</p>
+        <p class="hero__lede">Python running on your computer makes private, professional-grade analysis possible. An LLM lets you build that workflow without already knowing Python—helping you write and understand the code while your student data stays local.</p>
         <div class="button-row">
           <a class="button" href="notebooks/{LESSONS[0]['slug']}">Start the workshop</a>
           <a class="button button--secondary" href="downloads/data-analysis-workshop.zip" download>Download all files</a>

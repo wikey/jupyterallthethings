@@ -171,7 +171,9 @@ button:focus-visible,
   border: 1px solid var(--green);
   border-radius: 0.35rem;
   color: white;
+  cursor: pointer;
   display: inline-flex;
+  font-family: var(--sans);
   font-weight: 700;
   justify-content: center;
   padding: 0.78rem 1.15rem;
@@ -459,6 +461,76 @@ code {
 .site-footer--home {
   margin-top: 0;
   text-align: center;
+}
+
+.prompt-main {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: clamp(3.5rem, 8vw, 6.5rem) 1.5rem;
+}
+
+.prompt-main > h1 {
+  font-family: var(--serif);
+  font-size: clamp(2.5rem, 6vw, 4.8rem);
+  letter-spacing: -0.035em;
+  line-height: 0.98;
+  margin: 0.55rem 0 1.25rem;
+  max-width: 850px;
+}
+
+.prompt-intro {
+  color: var(--ink-soft);
+  font-size: 1.15rem;
+  max-width: 760px;
+}
+
+.prompt-actions {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 2rem 0 0;
+}
+
+.text-link {
+  font-weight: 600;
+  margin-left: 0.35rem;
+}
+
+.copy-status {
+  color: var(--green);
+  font-size: 0.9rem;
+  min-height: 1.5rem;
+}
+
+.prompt-panel {
+  background: var(--code);
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  margin: 1rem 0 2rem;
+  max-height: 70vh;
+  overflow: auto;
+}
+
+.prompt-panel pre {
+  color: #edf8f4;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.86rem;
+  line-height: 1.65;
+  margin: 0;
+  overflow-wrap: anywhere;
+  padding: clamp(1rem, 4vw, 2rem);
+  white-space: pre-wrap;
+}
+
+.prompt-note {
+  margin-top: 2rem;
+}
+
+.prompt-note h2 {
+  font-family: var(--serif);
+  font-size: 1.45rem;
+  margin: 0 0 0.6rem;
 }
 
 /* Notebook pages: augment nbconvert's Lab template without changing its output. */

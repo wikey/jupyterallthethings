@@ -67,8 +67,12 @@ DATA_FILES = (
 )
 
 PACKAGE_FILES = (
+    "AGENTS.md",
     "README.md",
     "requirements.txt",
+    "docs/agent-environment-guide.md",
+    "prompts/macos-setup-agent-prompt.md",
+    "scripts/setup_macos.sh",
     *DATA_FILES,
     *(f"notebooks/{lesson['source']}" for lesson in LESSONS),
 )
@@ -94,7 +98,7 @@ def require_sources() -> None:
 
 def site_header(prefix: str) -> str:
     return f"""
-<a class="skip-link" href="#workshop-content">Skip to lesson</a>
+<a class="skip-link" href="#workshop-content">Skip to content</a>
 <header class="site-header" aria-label="Workshop header">
   <div class="site-header__inner">
     <a class="site-brand" href="{prefix}index.html">
@@ -272,20 +276,21 @@ def home_page() -> str:
 
     <section class="section section--tinted" id="setup">
       <div class="section-heading">
-        <p class="eyebrow">Run it yourself</p>
-        <h2>Start locally in four commands</h2>
+        <p class="eyebrow">Mac setup · no Python knowledge required</p>
+        <h2>Ask your local agent to handle setup</h2>
+        <p>The setup prompt directs an agent with local shell access to install JupyterLab Desktop, create an isolated environment with Seaborn, and make notebooks open with a double-click.</p>
       </div>
       <div class="setup-grid">
         <ol class="steps">
-          <li><span>1</span><div><strong>Download and unzip the workshop</strong><p>Keep the notebooks and three synthetic CSV files in their existing folders.</p></div></li>
-          <li><span>2</span><div><strong>Create a virtual environment</strong><pre><code>python3 -m venv .venv
-source .venv/bin/activate</code></pre></div></li>
-          <li><span>3</span><div><strong>Install the workshop tools</strong><pre><code>python -m pip install -r requirements.txt</code></pre></div></li>
-          <li><span>4</span><div><strong>Launch Jupyter Lab</strong><pre><code>jupyter lab</code></pre><p>Open <code>notebooks/00_research_wow.ipynb</code> and run from top to bottom.</p></div></li>
+          <li><span>1</span><div><strong>Download and unzip the complete workshop</strong><p>Move it to a stable location before setup. Keep the notebooks, documentation, and synthetic CSV files together.</p></div></li>
+          <li><span>2</span><div><strong>Open the Mac setup prompt</strong><p>It gives your agent explicit installation, privacy, verification, and future-library instructions.</p><p><a class="button button--small" href="setup-macos.html">View and copy the setup prompt</a></p></div></li>
+          <li><span>3</span><div><strong>Paste it into your local agent</strong><p>The agent uses Homebrew, JupyterLab Desktop, and a project-specific environment. You approve installation; the agent handles the commands.</p></div></li>
+          <li><span>4</span><div><strong>Double-click the first notebook</strong><p>Open <code>notebooks/00_research_wow.ipynb</code> in Finder. Future libraries can be added by asking your agent in plain language.</p></div></li>
         </ol>
         <aside class="callout">
-          <h3>Before using real student data</h3>
-          <p>Local processing is not automatically policy-compliant. Use an approved device and environment, follow your organization’s data-handling rules, and never publish a site built from notebooks containing real records.</p>
+          <h3>Local setup, local data</h3>
+          <p>Installing software requires network access, but setup does not require opening or transmitting assessment data. Analysis remains on your Mac.</p>
+          <p>Local processing is not automatically policy-compliant. Use an approved device and follow your organization’s rules.</p>
           <p><strong>All data included here is synthetic.</strong></p>
         </aside>
       </div>
@@ -317,6 +322,11 @@ source .venv/bin/activate</code></pre></div></li>
           <strong>Data schema</strong>
           <span>Field names and structure</span>
         </a>
+        <a class="download-card" href="downloads/macos-setup-agent-prompt.md" download>
+          <span class="download-card__type">PROMPT</span>
+          <strong>Mac setup prompt</strong>
+          <span>Instructions for a local agent</span>
+        </a>
       </div>
     </section>
   </main>
@@ -329,6 +339,60 @@ source .venv/bin/activate</code></pre></div></li>
 """
 
 
+def macos_setup_page() -> str:
+    prompt = html.escape(
+        (ROOT / "prompts" / "macos-setup-agent-prompt.md").read_text(encoding="utf-8")
+    )
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A copyable prompt for setting up the Jupyter workshop on macOS with a local agent.">
+  <title>Mac setup prompt | Local-first assessment analysis</title>
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body class="prompt-page">
+  {site_header("")}
+  <main class="prompt-main" aria-labelledby="setup-title">
+    <p class="eyebrow">Agent-assisted Mac setup</p>
+    <h1 id="setup-title">Set up once. Double-click notebooks afterward.</h1>
+    <p class="prompt-intro">Download and unzip the complete workshop first. Then paste the prompt below into a local agent that has permission to run shell commands on your Mac.</p>
+    <div class="prompt-actions">
+      <button class="button" id="copy-prompt" type="button">Copy setup prompt</button>
+      <a class="button button--secondary" href="downloads/macos-setup-agent-prompt.md" download>Download prompt</a>
+      <a class="text-link" href="index.html#setup">Back to setup overview</a>
+    </div>
+    <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+    <section class="prompt-panel" aria-label="Mac setup prompt">
+      <pre id="agent-prompt"><code>{prompt}</code></pre>
+    </section>
+    <aside class="callout prompt-note">
+      <h2>What the agent will change</h2>
+      <p>It installs JupyterLab Desktop, <code>uv</code>, and <code>duti</code> through Homebrew; creates a private <code>.venv</code> inside the workshop; installs the recorded Python libraries; and associates <code>.ipynb</code> files with JupyterLab.</p>
+      <p>The setup downloads software, but it does not need to read or transmit assessment records.</p>
+    </aside>
+  </main>
+  <footer class="site-footer"><p>After setup, open the workshop by double-clicking <code>notebooks/00_research_wow.ipynb</code>.</p></footer>
+  <script>
+    const button = document.getElementById("copy-prompt");
+    const prompt = document.getElementById("agent-prompt").innerText;
+    const status = document.getElementById("copy-status");
+    button.addEventListener("click", async () => {{
+      try {{
+        await navigator.clipboard.writeText(prompt);
+        status.textContent = "Setup prompt copied.";
+        button.textContent = "Copied";
+      }} catch (error) {{
+        status.textContent = "Copy was blocked by the browser. Select the prompt text below or use Download prompt.";
+      }}
+    }});
+  </script>
+</body>
+</html>
+"""
+
+
 def copy_downloads(output: Path) -> None:
     downloads = output / "downloads"
     notebook_downloads = downloads / "notebooks"
@@ -336,6 +400,10 @@ def copy_downloads(output: Path) -> None:
 
     for filename in DATA_FILES:
         shutil.copy2(ROOT / filename, downloads / filename)
+    shutil.copy2(
+        ROOT / "prompts" / "macos-setup-agent-prompt.md",
+        downloads / "macos-setup-agent-prompt.md",
+    )
     for lesson in LESSONS:
         shutil.copy2(
             ROOT / "notebooks" / lesson["source"],
@@ -378,6 +446,7 @@ def build(output: Path) -> None:
     shutil.copy2(ROOT / "assets" / "site.css", output / "assets" / "site.css")
     (output / ".nojekyll").write_text("", encoding="utf-8")
     (output / "index.html").write_text(home_page(), encoding="utf-8")
+    (output / "setup-macos.html").write_text(macos_setup_page(), encoding="utf-8")
 
     for index, lesson in enumerate(LESSONS):
         render_notebook(lesson, index, output / "notebooks" / lesson["slug"])

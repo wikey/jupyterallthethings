@@ -1,8 +1,8 @@
 # Local, research-grade analysis of student assessment data
 
-A five-part Jupyter workshop showing how Python can turn raw assessment exports into careful, research-grade explorations while the data stays on the analyst’s machine.
+Python running on your computer gives you private, professional-grade analysis. You do not need to know—or learn—Python to use it: a local agent can write, run, and revise the code while you guide the questions, review the work, and interpret the results.
 
-The audience is not programmers. It is domain experts—assessment coordinators, research directors, program staff, and others—who are comfortable asking an AI assistant for help but may not yet realize that an agent can support the entire local workflow. The included CSV files are synthetic.
+This five-part Jupyter workshop is designed for assessment coordinators, research directors, program staff, and other domain experts. It turns raw assessment exports into careful explorations while the data stays on the analyst’s machine. The included CSV files are synthetic.
 
 ## Workshop sequence
 
@@ -16,9 +16,35 @@ Read and run the notebooks in order:
 
 Realistic prompts between steps demonstrate how to ask an AI assistant for generic code using a schema description rather than student records.
 
-## Run the workshop locally
+## Recommended Mac setup: ask a local agent
 
-Python 3.10 or newer is recommended.
+The intended macOS experience is a one-time agent-assisted installation followed by double-clicking notebook files in Finder.
+
+1. Download and unzip the complete workshop.
+2. Move the workshop to a stable location.
+3. Open [`prompts/macos-setup-agent-prompt.md`](prompts/macos-setup-agent-prompt.md).
+4. Paste the complete prompt into a local agent with permission to run shell commands.
+5. Follow any macOS approval prompts described by the agent.
+6. Double-click `notebooks/00_research_wow.ipynb`.
+
+The agent uses the included [`scripts/setup_macos.sh`](scripts/setup_macos.sh) to install:
+
+- JupyterLab Desktop through the Homebrew cask `jupyterlab-app`;
+- `uv` for an isolated project environment;
+- all libraries in `requirements.txt`, including Seaborn; and
+- `duti` to make JupyterLab Desktop the default `.ipynb` application.
+
+It then configures notebooks in this workshop to use `.venv/bin/python`. Setup downloads software but does not need to inspect or transmit assessment data.
+
+Instructions for future agents—including adding libraries, repairing the environment, handling a moved folder, and preserving the local-data boundary—are in [`AGENTS.md`](AGENTS.md) and [`docs/agent-environment-guide.md`](docs/agent-environment-guide.md).
+
+For example, a user can later tell their agent:
+
+> Add Plotly and OpenPyXL to this workshop. Record them in its requirements, install them into the project environment, verify the imports without opening data, and tell me when to restart the notebook kernel.
+
+## Manual setup or non-macOS environments
+
+Python 3.10 or newer is recommended. Users who prefer a command-line setup can run:
 
 ```bash
 python3 -m venv .venv
@@ -27,7 +53,7 @@ python -m pip install -r requirements.txt
 jupyter lab
 ```
 
-Open `notebooks/00_research_wow.ipynb` and run the cells from top to bottom. Keep the notebooks and CSV files in their existing folders so the notebooks can locate the data.
+Keep the notebooks and CSV files in their existing folders so the notebooks can locate the data.
 
 ## Build and preview the static site
 
@@ -41,20 +67,14 @@ python -m http.server --directory _site 8000
 Open <http://localhost:8000>. The generated `_site/` directory contains:
 
 - a workshop landing page;
+- a copyable Mac setup prompt;
 - five linked, static notebook lessons;
 - downloadable source notebooks and synthetic CSV files; and
-- a ZIP containing the complete local workshop.
+- a ZIP containing the complete local workshop and agent documentation.
 
 The build fails if a notebook contains saved error output or if the generated site contains a broken local link. `_site/` is generated and intentionally excluded from version control.
 
 ## Publish with GitHub Pages
-
-This directory is ready to serve as the root of a standalone GitHub repository.
-
-1. Create an empty GitHub repository.
-2. Push the contents of this directory to its `main` branch.
-3. In **Settings → Pages**, set **Source** to **GitHub Actions** if it is not already selected.
-4. Open the **Actions** tab and watch the “Deploy workshop to GitHub Pages” workflow.
 
 The workflow in `.github/workflows/deploy-pages.yml` builds and deploys `_site/` on every push to `main`. It can also be run manually from the Actions tab. All site links are relative, so the result works at either a user/organization Pages domain or a project subpath.
 
@@ -69,12 +89,16 @@ Local processing is not automatically policy-compliant. Use an approved device a
 ```text
 .
 ├── .github/workflows/deploy-pages.yml  # Automated GitHub Pages deployment
+├── AGENTS.md                           # Durable instructions for local agents
 ├── assets/site.css                     # Shared site styles
+├── docs/agent-environment-guide.md     # Setup, library, repair, and privacy procedures
 ├── notebooks/                          # Workshop source notebooks
+├── prompts/macos-setup-agent-prompt.md # Copyable setup prompt
 ├── scripts/build_site.py               # Static-site builder
+├── scripts/setup_macos.sh              # Idempotent macOS setup
 ├── FakeiReadyData.csv                  # Synthetic Reading export
 ├── FakeiReadyMathData.csv              # Synthetic Math export
 ├── FakeiReadySchema.csv                # Data dictionary/schema
-├── requirements.txt                    # Local and site-build dependencies
+├── requirements.txt                    # Reproducible project dependencies
 └── README.md
 ```

@@ -284,7 +284,7 @@ def home_page() -> str:
         <ol class="steps">
           <li><span>1</span><div><strong>Download and unzip the complete workshop</strong><p>Move it to a stable location before setup. Keep the notebooks, documentation, and synthetic CSV files together.</p></div></li>
           <li><span>2</span><div><strong>Open the Mac setup prompt</strong><p>It gives your agent explicit installation, privacy, verification, and future-library instructions.</p><p><a class="button button--small" href="setup-macos.html">View and copy the setup prompt</a></p></div></li>
-          <li><span>3</span><div><strong>Paste it into your local agent</strong><p>The agent uses Homebrew, JupyterLab Desktop, and a project-specific environment. You approve installation; the agent handles the commands.</p></div></li>
+          <li><span>3</span><div><strong>Paste it into your local agent</strong><p>The agent preflights Apple Command Line Tools, then uses Homebrew, JupyterLab Desktop, and a project-specific environment. Full Xcode is not required. You approve installation; the agent handles the commands.</p></div></li>
           <li><span>4</span><div><strong>Double-click the first notebook</strong><p>Open <code>notebooks/00_research_wow.ipynb</code> in Finder. Future libraries can be added by asking your agent in plain language.</p></div></li>
         </ol>
         <aside class="callout">
@@ -369,7 +369,7 @@ def macos_setup_page() -> str:
     </section>
     <aside class="callout prompt-note">
       <h2>What the agent will change</h2>
-      <p>It installs JupyterLab Desktop, <code>uv</code>, and <code>duti</code> through Homebrew; creates a private <code>.venv</code> inside the workshop; installs the recorded Python libraries; and associates <code>.ipynb</code> files with JupyterLab.</p>
+      <p>It first checks for Apple Command Line Tools and guides you through Apple’s installer if needed—full Xcode is not required. It then installs JupyterLab Desktop, <code>uv</code>, and <code>duti</code> through Homebrew; creates a private <code>.venv</code> inside the workshop; installs the recorded Python libraries; and associates <code>.ipynb</code> files with JupyterLab.</p>
       <p>The setup downloads software, but it does not need to read or transmit assessment records.</p>
     </aside>
   </main>

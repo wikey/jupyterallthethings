@@ -6,6 +6,7 @@ This guide is the durable operating procedure for agents that set up or maintain
 
 | Layer | Purpose |
 | --- | --- |
+| Apple Command Line Tools | Supplies the macOS developer utilities required by Homebrew; full Xcode is unnecessary. |
 | Homebrew | Installs and updates local development tools. |
 | JupyterLab Desktop (`jupyterlab-app`) | Registers `.ipynb` files with macOS and supplies the desktop interface. |
 | `uv` | Creates and maintains the isolated Python environment quickly. |
@@ -24,7 +25,9 @@ Do not install the Homebrew `jupyterlab` formula for this workflow. That formula
 - The complete workshop downloaded, unzipped, and moved to a stable location
 - Internet access during installation
 
-The installation downloads software from Homebrew and Python package registries. It does not need to read or transmit assessment data.
+Apple Command Line Tools do not need to be installed in advance. If they are missing, the agent can open Apple’s official installer, but the user must approve the macOS dialog and wait for it to finish. Full Xcode is not required.
+
+The installation downloads software from Apple, Homebrew, and Python package registries. It does not need to read or transmit assessment data.
 
 ### Preferred procedure
 
@@ -36,14 +39,18 @@ bash scripts/setup_macos.sh
 
 The script performs these operations idempotently:
 
-1. Confirms that it is running on macOS and that Homebrew is available.
-2. Installs or updates JupyterLab Desktop, `uv`, and `duti` through Homebrew.
-3. Creates `.venv` with Python 3.12 if it does not exist.
-4. Installs `requirements.txt` into that environment, including Seaborn.
-5. Verifies imports without reading workshop data.
-6. Sets JupyterLab Desktop’s project-specific `pythonPath` for `notebooks/`.
-7. Makes JupyterLab Desktop the default application for `.ipynb` files.
-8. Opens the first notebook in JupyterLab Desktop.
+1. Confirms that it is running on macOS 12 or newer.
+2. Verifies Apple Command Line Tools and opens Apple’s installer when they are missing.
+3. Confirms that Homebrew is available.
+4. Installs or updates JupyterLab Desktop, `uv`, and `duti` through Homebrew.
+5. Creates `.venv` with Python 3.12 if it does not exist.
+6. Installs `requirements.txt` into that environment, including Seaborn.
+7. Verifies imports without reading workshop data.
+8. Sets JupyterLab Desktop’s project-specific `pythonPath` for `notebooks/`.
+9. Makes JupyterLab Desktop the default application for `.ipynb` files.
+10. Opens the first notebook in JupyterLab Desktop.
+
+If Apple Command Line Tools are missing, the script runs `xcode-select --install` and stops. Tell the user to click **Install**, accept Apple’s license, and provide approval if requested. Wait for installation to finish, verify `xcode-select -p` and `xcrun --find clang`, and run the script again. Do not install the full Xcode application.
 
 If Homebrew is missing, explain what Homebrew is and ask the user to approve its installation. Use only the official installer from <https://brew.sh/>. After Homebrew is installed, run the setup script again.
 

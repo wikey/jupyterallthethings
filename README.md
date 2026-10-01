@@ -27,8 +27,9 @@ The intended macOS experience is a one-time agent-assisted installation followed
 5. Follow any macOS approval prompts described by the agent.
 6. Double-click `notebooks/00_research_wow.ipynb`.
 
-The agent uses the included [`scripts/setup_macos.sh`](scripts/setup_macos.sh) to install:
+The agent uses the included [`scripts/setup_macos.sh`](scripts/setup_macos.sh) to preflight or install:
 
+- Apple Command Line Tools when needed—full Xcode is not required;
 - JupyterLab Desktop through the Homebrew cask `jupyterlab-app`;
 - `uv` for an isolated project environment;
 - all libraries in `requirements.txt`, including Seaborn; and

@@ -22,6 +22,7 @@ Before changing the environment or notebooks, read:
 
 On macOS:
 
+- Preflight Apple Command Line Tools with `xcode-select -p` and `xcrun --find clang` before Homebrew. Full Xcode is not required. If the tools are missing, trigger Apple’s official dialog with `xcode-select --install`, guide the user through it, and verify completion before continuing.
 - Install the desktop application with the Homebrew cask `jupyterlab-app`; do not substitute the `jupyterlab` formula.
 - Use `uv` and the project-local `.venv` for Python packages.
 - Never install workshop packages into macOS system Python, Homebrew’s global Python, or JupyterLab Desktop’s bundled environment.

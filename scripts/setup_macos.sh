@@ -76,6 +76,7 @@ checks = {
     "numpy": "numpy",
     "pandas": "pandas",
     "seaborn": "seaborn",
+    "statsmodels": "statsmodels",
 }
 for import_name, distribution_name in checks.items():
     importlib.import_module(import_name)

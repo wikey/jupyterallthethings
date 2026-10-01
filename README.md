@@ -2,7 +2,7 @@
 
 Python running on your computer gives you private, professional-grade analysis. You do not need to know—or learn—Python to use it: a local agent can write, run, and revise the code while you guide the questions, review the work, and interpret the results.
 
-This five-part Jupyter workshop is designed for assessment coordinators, research directors, program staff, and other domain experts. It turns raw assessment exports into careful explorations while the data stays on the analyst’s machine. The included CSV files are synthetic.
+This six-part Jupyter workshop is designed for assessment coordinators, research directors, program staff, and other domain experts. It turns raw assessment exports into careful explorations while the data stays on the analyst’s machine. The included CSV files are synthetic.
 
 ## Workshop sequence
 
@@ -13,8 +13,15 @@ Read and run the notebooks in order:
 3. [`02_clean_analysis_table.ipynb`](notebooks/02_clean_analysis_table.ipynb) — validate joins and build a clean longitudinal table.
 4. [`03_exploratory_growth.ipynb`](notebooks/03_exploratory_growth.ipynb) — explore cohort trends, paired growth, and subgroup summaries.
 5. [`04_presentation_view.ipynb`](notebooks/04_presentation_view.ipynb) — produce an aggregate, presentation-ready dashboard.
+6. [`05_group_data_cleaning_lab.ipynb`](notebooks/05_group_data_cleaning_lab.ipynb) — work through a facilitated, deliberately messy dataset and make visible decisions about duplicates, labels, units, outliers, standardization, subgroups, and adjusted associations.
 
 Realistic prompts between steps demonstrate how to ask an AI assistant for generic code using a schema description rather than student records.
+
+## Facilitated group cleaning lab
+
+Lesson 05 is a standalone 45–90 minute group exercise using `MessyAssessmentData.csv`. Participants inspect standard distributions, scatterplots, boxplots, missingness summaries, and subgroup comparisons before choosing what to normalize, flag, retain, or exclude.
+
+The facilitator reference is [`docs/facilitator-group-cleaning-lab.md`](docs/facilitator-group-cleaning-lab.md). It includes a suggested agenda, planted issue counts, defensible reference policies, expected patterns, live variations, and language for distinguishing adjusted associations from causal effects. Do not show that guide before the group’s first audit.
 
 ## Recommended Mac setup: ask a local agent
 
@@ -69,11 +76,26 @@ Open <http://localhost:8000>. The generated `_site/` directory contains:
 
 - a workshop landing page;
 - a copyable Mac setup prompt;
-- five linked, static notebook lessons;
+- six linked, static notebook lessons;
 - downloadable source notebooks and synthetic CSV files; and
 - a ZIP containing the complete local workshop and agent documentation.
 
 The build fails if a notebook contains saved error output or if the generated site contains a broken local link. `_site/` is generated and intentionally excluded from version control.
+
+### Regenerate the group lab
+
+Maintainers can deterministically rebuild the synthetic CSV, recreate the notebook source, execute it against synthetic data, and rebuild the site:
+
+```bash
+python scripts/generate_messy_assessment_data.py
+python scripts/build_group_cleaning_lab.py
+jupyter nbconvert --to notebook --execute --inplace \
+  notebooks/05_group_data_cleaning_lab.ipynb \
+  --ExecutePreprocessor.timeout=300
+python scripts/build_site.py
+```
+
+Review all saved outputs before committing. The facilitator guide contains the intended planted issues and reference counts.
 
 ## Publish with GitHub Pages
 
@@ -93,13 +115,18 @@ Local processing is not automatically policy-compliant. Use an approved device a
 ├── AGENTS.md                           # Durable instructions for local agents
 ├── assets/site.css                     # Shared site styles
 ├── docs/agent-environment-guide.md     # Setup, library, repair, and privacy procedures
-├── notebooks/                          # Workshop source notebooks
+├── docs/facilitator-group-cleaning-lab.md # Group-lab agenda and answer key
+├── notebooks/                          # Workshop source notebooks, including the group lab
 ├── prompts/macos-setup-agent-prompt.md # Copyable setup prompt
+├── scripts/build_group_cleaning_lab.py # Rebuilds the facilitated notebook source
 ├── scripts/build_site.py               # Static-site builder
+├── scripts/generate_messy_assessment_data.py # Deterministic synthetic-data generator
 ├── scripts/setup_macos.sh              # Idempotent macOS setup
 ├── FakeiReadyData.csv                  # Synthetic Reading export
 ├── FakeiReadyMathData.csv              # Synthetic Math export
 ├── FakeiReadySchema.csv                # Data dictionary/schema
+├── MessyAssessmentData.csv             # Deliberately messy synthetic group-lab data
+├── MessyAssessmentDataSchema.csv       # Group-lab data dictionary
 ├── requirements.txt                    # Reproducible project dependencies
 └── README.md
 ```

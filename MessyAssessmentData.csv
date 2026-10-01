@@ -1,0 +1,255 @@
+student_key,grade,race_ethnicity,gender,economically_disadvantaged,mll,iep,attendance_rate,fall_score,spring_score,test_date,test_start_time,time_of_day,duration_minutes,device_interruption,administration_type,after_school_program,attempt,record_status
+S038, 7 ,white,male,FALSE,No, No ,0.917,494,517,"May 10, 2026", 9:30am ,a.m.,32,N,Standard,FALSE,1,Complete
+S037, 8 ,white,M,Not Reported, No ,No,0.908,540,550,2026-13-40,9:50 AM,a.m.,68,1,Standard,N,1,Complete
+S001,7,Hispanic/Latino,F,1,FALSE,no,0.868,452,-45,2026-05-13,08:15,a.m.,55,N,Standard,TRUE,1,Complete
+S044,8th,White,Nonbinary,FALSE,No,FALSE,0.955,412,450,04/22/2026,9:15 AM,morning,56,FALSE,Standard,N,1,Complete
+S092, 7 ,Hispanic/Latino, Female ,no,N,FALSE,0.941,444, 465 ,05/13/2026, 9:15am ,morning,58 min, No ,Makeup, No ,2,Complete
+S100,Grade 8,Black, Male ,0,1,0,92.0, 437 ,467,2026-04-14, 8:50am ,a.m.,48,0,Standard,0,1,Complete
+S123,7,Black/African American, Male ,Y,Yes,no,0.859,426,456,2026-04-14, 1:10pm ,PM,48,FALSE,Standard,No,1,Complete
+S222,07,Latino/a,male,Y,FALSE, No ,0.912,461,483,04/30/2026,10:20 AM,AM,53,No,Standard,Yes,1,Complete
+S045, 8 ,Latino/a,male,Unknown, No ,no,0.932,535,566,2026-04-21,09:40,a.m.,60,N,Standard,FALSE,1,Complete
+S198, 6 ,Hispanic/Latino,Female,No,yes, No ,0.879,438,470,2026-04-22,9:20 AM,a.m.,62,No,Standard,No,1,Complete
+S184,7,White, Female ,no,no,yes,0.952,426,436,05/01/2026, 9:50am ,Morning,74,no,Extended time,No,1,Complete
+S180,Grade 8,Black/African American,NB,yes,N,Y,0.859,488,525,"Apr 26, 2026",08:30,Morning,65, No ,Makeup,no,2,Complete
+S194, 6 ,Black, Male ,TRUE,1,1,0.866,336, 373 ,"Apr 23, 2026", 2:15pm ,After lunch,82, No ,Standard, No ,1,Complete
+S021,8,Hispanic/Latino,male,No,0,yes,0.919,484,511,05/10/2026, 9:45am ,morning,68,N,Standard,1,1,Complete
+S223,7th,White,Female,Yes,0,FALSE,0.903,485,493,2026-04-19,10:00 AM,morning,420,TRUE,Standard,N,1,Complete
+S121,6th,Black,F, No ,Y,FALSE,0.967,411,433,2026-05-01,9:45 AM,a.m.,71,0,Standard,no,1,Complete
+S231,08,Black/African American,Male,Y,Y,No,0.862,464,481,2026-05-17,1:50 PM,Afternoon,61, No ,Standard,Y,1,Complete
+S018,7th,Black,Male,FALSE,no,No,0.942,412,420,2026-05-04,08:50,a.m.,51,Yes,Standard,FALSE,1,Invalidated - interruption
+S007,7,Latino/a, Male ,N,N,0,0.959,495,513,"Apr 26, 2026",10:30,morning,54,no,Standard,0,1,Complete
+S143,Grade 6,Hispanic,Female,No,yes,N,0.956,394, 426 ,04/20/2026,9:15 AM,morning,58,Y,Standard,FALSE,1,Invalidated - interruption
+S031,08,asian,M,N,0,no,0.952,469,498,05/13/2026, 8:50am ,a.m.,58,FALSE,Standard,no,1,Complete
+S070, 7 ,Asian,Female, No ,1,No,91.7,558,585,2026-04-15,08:20,a.m.,73,No,Standard,yes,1,Complete
+S177,Grade 6,African American,F,1,Y,TRUE,0.823,341,383,"Apr 15, 2026",08:10,a.m.,91,0,Extended time,No,1,Complete
+S112, 7 ,asian,Female,FALSE,yes, No ,0.924,405,420,2026-05-02,12:50,p.m.,87,1,Standard, No ,1,Complete
+S099,6,African American,male,Y, No ,0,0.940,398,435,04/28/2026, 1:00pm ,Afternoon,43,FALSE,Standard,No,1,Complete
+S132,6,Asian,Female,no,yes,no,0.934,408,427,2026-05-07, 9:00am ,Morning,73,No,Standard,N,1,Complete
+S189, 6 ,Latino/a, Male ,Yes,,No,92.2,451,456,05/09/2026,1:15 PM,PM,52,N,Standard,1,1,Complete
+S226,7,white,male,Yes,yes,TRUE,82%,385,410,04/15/2026,14:45,PM,68,N,Standard,1,1,Complete
+S051,8,White,F,0, No ,Y,88.2,419,448,2026-04-22,1:00 PM,After lunch,66,FALSE,Standard,FALSE,1,Complete
+S155,7,Latino/a,M,0,FALSE,No,0.940,491, 511 ,2026-04-18,13:50,p.m.,51,FALSE,Standard,FALSE,1,Complete
+S143,Grade 6,Hispanic/Latino,female,FALSE,Y,FALSE,0.956,394,434,04/24/2026,10:00,morning,54,FALSE,Makeup,No,2,Complete
+S128,07,Asian,Female,No,no,Y,94.4,55,564,05/02/2026,14:45,Afternoon,73,No,Extended time,No,1,Complete
+S239,8,Hispanic/Latino,Female,N,FALSE,0,0.939,444,473,05/07/2026,08:00,Morning,64,0,Standard,No,1,Complete
+S029,08,White,M,No,1, No ,0.888,410,443,"Apr 20, 2026",9:15 AM,a.m.,58,0,Standard,No,1,Complete
+S110,Grade 6,African American,Female,0,0,no,0.916, 405 ,430,2026-04-27,8:40 AM,Morning,57 min,FALSE,Standard,FALSE,1,Complete
+S131,Grade 6,Black/African American, Male ,1,FALSE,no,108%,325,absent,2026-05-13,8:45 AM,morning,68,No,Standard,FALSE,1,Complete
+S016,Grade 6,African American, Female ,N,0,no,0.951, 467 ,500,05/07/2026,9:40 AM,morning,53,No,Standard,no,1,Complete
+S015,07,White,Male,yes,0,TRUE,0.919,371,395,2026-05-19,1:10 PM,p.m.,83 min, No ,Standard,No,1,Complete
+S153,8th,white,M,Yes,0,N,0.896,410,426,2026-05-05,10:40 AM,morning,57, No ,Standard,N,1,Complete
+S095, 7 ,Latino/a,male,yes,TRUE,No,0.946,539,569,"Apr 24, 2026",8:15 AM,AM,55, No ,Standard,0,1,Complete
+S066,6,white, Male ,N,N,FALSE,94.6,374,416,05/07/2026,10:45,a.m.,60,N,Standard, No ,1,Complete
+S071,Grade 8,white,F,yes,N,no,0.925,453,492,"May 07, 2026",09:10,AM,38,no,Standard, No ,1,Complete
+S139,Grade 7,white, Female ,Yes,Yes,no,0.878,443,466,2026-05-18,2:50 PM,p.m.,58,1,Standard,0,1,Complete
+S174,Grade 7,asian,male,Unknown,0, No ,0.917,478, 514 ,2026-05-04, 8:50am ,morning,57,no,Standard,Yes,1,Complete
+S073,07,Hispanic/Latino,Female,1,yes,FALSE,0.871,478,503,"Apr 22, 2026", 9:20am ,morning,62,N,Standard,yes,1,Complete
+S225,8th,White,Male, No ,N,Y,0.961,517,527,05/18/2026, 1:30pm ,p.m.,,yes,Standard,no,1,Complete
+S156,6th,White, Female ,FALSE,No,no,0.917,435,477,2026-04-23,9:40 AM,Afternoon,64,no,Standard,no,1,Complete
+S201, 6 ,Declined, Male ,yes,N,Yes,0.851,461,484,2026-05-20,09:30,morning,69,N,Extended time,no,1,Complete
+S142,Grade 8,White,Female,Y,1, No ,0.871,375,392,04/16/2026,12:45 PM,p.m.,55, No ,Standard, No ,1,Complete
+S042, 7 ,Hispanic/Latino,female,yes,1,Yes,0.857,350,105,"May 20, 2026", 1:45pm ,PM,76,FALSE,Standard,Yes,1,Complete
+S023,07,Black/African American,M,FALSE,No,0,0.939,388, 431 ,2026-04-18, 9:10am ,morning,56, No ,Standard,No,1,Complete
+S062,07,Hispanic,male,yes,0,No,0.902,427,468,2026-05-20,12:45,p.m.,62,No,Standard,1,1,Complete
+S085,7th,Black,F,FALSE,0,0,0.983,393,418,05/14/2026, 1:00pm ,PM,69,no,Standard,N,1,Complete
+S210, 8 ,Hispanic,Male,No,N,No,0.970,434,459,2026-04-28,09:00,AM,64,Yes,Standard,FALSE,1,Complete
+S056, 7 ,African American,M,No,no,no,not recorded,494,518,2026-05-11,10:45,a.m.,51 min,No,Standard,No,1,Complete
+S065,7,Black/African American,M,Not Reported,no,1,0.850,424,440,05/14/2026,09:00,a.m.,72,N,Standard,1,1,Complete
+S088,Grade 6,Latino/a, Female ,No,N, No ,98%,454,496,"May 14, 2026",10:30 AM,AM,47,0,Standard,0,1,Complete
+S188,8th,Latino/a,female,Yes,FALSE,Not Reported,0.928,441,474,"Apr 22, 2026",9:00 AM,Afternoon,43,N,Standard,1,1,Complete
+S125,Grade 6,White,female,0,N,no,0.963,404, 434 ,2026-04-22,10:10 AM,morning,57,FALSE,Standard,No,1,Complete
+S091,08,Black/African American, Male ,1,yes,1,0.861,488,512,"May 11, 2026",2:00 PM,After lunch,80, No ,Standard,0,1,Complete
+S193,6,Black,female,FALSE,N,Yes,0.913,417,442,2026-05-15, 8:30am ,Morning,56,0,Makeup,FALSE,2,Complete
+S083,6th,African American,Nonbinary,yes,Yes,no,0.921,406,444,"May 09, 2026", 10:50am ,Morning,57,no,Standard,no,1,Complete
+S206, 7 ,White, Male ,no,No,1,85.8,470,498,04/15/2026,10:20 AM,AM,67,N,Standard,no,1,Complete
+S024,7th,Not reported, Male ,1,Yes, No ,0.882,412,426,2026-05-04, 12:15pm ,Afternoon,59,No,Standard,No,1,Complete
+S192,Grade 6,Hispanic, Female ,1,Yes,No,88.9,443, 453 ,2026-05-16,14:15,After lunch,52, No ,Standard,0,1,Complete
+S025,Grade 8,Black/African American,Unknown,Yes,FALSE,No,0.962, 422 ,443,"May 15, 2026", 1:45pm ,PM,53,No,Standard, No ,1,Complete
+S069,7,White,female,yes,0, No ,0.846,460,497,"May 06, 2026",10:10 AM,morning,53, No ,Standard,Y,1,Complete
+S164, 6 ,African American,F, No ,0,N,0.926,424,454,2026-04-14, 12:45pm ,PM,74,Yes,Standard,FALSE,1,Complete
+S182, 7 ,Black, Male ,Y,1,No,0.804,382,406,2026-05-04,9:10 AM,Morning,71,No,Makeup,TRUE,1,Complete
+S182, 7 ,Black, Male ,Y,1,No,0.804,382,406,2026-05-04,9:10 AM,Morning,71,No,Makeup,TRUE,1,Complete
+S171,7,white,F,Y,yes,1,0.852, 416 ,445,05/17/2026,2:00 PM,p.m.,61,No,Standard,yes,1,Complete
+S129,07,asian,male,1,No, No ,0.923,547,569,2026-05-20, 10:10am ,morning,55, No ,Standard,FALSE,1,Complete
+S227,Grade 8,Hispanic/Latino, Male , No ,0, No ,0.975,428,440,2026-05-10,9:30 AM,a.m.,64,N,Standard,No,1,Complete
+S022,Grade 7,Hispanic/Latino,male,FALSE,0,yes,0.910,, 418 ,"May 06, 2026", 8:00am ,Morning,71,N,Extended time,Y,1,Complete
+S169,7th,white,female,yes, No ,N,0.896, 411 ,453,2026-05-21,9:15 AM,morning,49,N,Standard,yes,1,Complete
+S120, 6 ,Hispanic,Male,No,N,TRUE,0.914,406,457,05/17/2026,08:00,morning,67,No,Standard,0,1,Complete
+S081,06,Two or more races,M, No ,FALSE,N,0.970,419,441,"May 10, 2026", 10:15am ,a.m.,51,0,Standard, No ,1,Complete
+S224,08,Not reported,Nonbinary,1,no,1,0.908,372,407,05/12/2026,08:20,Afternoon,76,no,Extended time,0,1,Complete
+S212,07,Latino/a,F,0, No ,no,0.945,515,532,"May 16, 2026",12:15 PM,PM,32,FALSE,Standard,no,1,Complete
+S191,Grade 6,Latino/a,Female,TRUE,no,no,0.942,412,463,2026-05-15,8:50 AM,a.m.,44,No,Standard, No ,1,Complete
+S163,8th,Black,Female,no,No,FALSE,0.897,513,538,"May 02, 2026",8:20 AM,a.m.,51,TRUE,Standard,N,1,Complete
+S154,7th,Black/African American,Male, No ,0,No,0.969,434,452,05/18/2026,08:50,Morning,52,TRUE,Standard,no,1,Complete
+S063,6th,white,M,0,N,N,1.000,473,506,2026-04-20, 9:40am ,a.m.,43,0,Standard,0,1,Complete
+S043, 6 ,Hispanic,male,No,No,FALSE,96.0,434,446,2026-05-05,9:20 AM,Morning,67,No,Standard,TRUE,1,Complete
+S167,6,Latino/a,Male,Yes,TRUE, No ,0.916,434,450,2026-04-15,13:20,p.m.,70,FALSE,Standard,FALSE,1,Complete
+S209,7,African American,NB,1, No , No ,0.931,445,471,04/19/2026,8:40 AM,AM,52, No ,Standard,0,1,Complete
+S135,07,African American,M,No,No,N,97.7,466,479,04/29/2026, 2:10pm ,After lunch,83,yes,Standard,No,1,Complete
+S190,Grade 7,Hispanic,Female, No ,no,TRUE,0.899, 481 ,503,05/08/2026, 8:40am ,AM,83,yes,Standard,FALSE,1,Invalidated - interruption
+S240,Grade 6,white,female,1,No,0,89.9,406,428,04/21/2026, 1:15pm ,Afternoon,47,0,Standard,no,1,Complete
+S040,07,,male,1,No,0,0.905,404,438,04/17/2026, 1:30pm ,p.m.,56 min, No ,Standard,No,1,Complete
+S002,Grade 6,white,Female,yes,1,1,0.831,361,392,2026-04-21, 9:15am ,a.m.,66,No,Extended time,Y,1,Complete
+S214, 6 ,Hispanic/Latino, Male ,no,No, No ,0.941,400,415,"May 19, 2026", 8:30am ,a.m.,55,N,Standard,no,1,Complete
+S108,8,Latino/a,M,yes,N, No ,0.889,420,444,04/17/2026,2:40 PM,p.m.,55,N,Standard,1,1,Complete
+S170,7th,Asian,Male,yes,FALSE,No,0.880,454,488,04/22/2026, 1:00pm ,p.m.,75,No,Standard,1,1,Complete
+S216, 6 ,Black,male,0, No ,no,0.941,382,409,"May 13, 2026",09:40,morning,47 min,0,Standard,1,1,Complete
+S067,Grade 7,white,female,1,N,No,0.918,415,429,05/07/2026,2:00 PM,Afternoon,59,yes,Standard,N,1,Complete
+S074,8,Not Reported,M,Y,N, No ,0.893,445,472,"May 18, 2026",9:30 AM,Morning,61,0,Standard,0,1,Complete
+S173,Grade 6,white,M,Y,1,no,0.877,391,411,"Apr 30, 2026", 9:00am ,a.m.,54,0,Standard,Yes,1,Complete
+S228,Grade 6,Latino/a, Male ,no,TRUE,0,0.917,428,459,2026-04-22,,a.m.,73,no,Standard,no,1,Complete
+S230,8,Black/African American,M,yes,FALSE,No,0.943,397,439,05/21/2026,09:15,AM,41, No ,Standard,TRUE,1,Complete
+S180,8,Black,Non-binary,TRUE,N,Y,0.859,488,—,2026-04-21, 9:50am ,AM,58,Yes,Standard,FALSE,1,Invalidated - interruption
+S124,6th,African American,M,1,FALSE,No,0.924,382,407,2026-05-01,09:40,a.m.,49,No,Standard,no,1,Complete
+S058,7th,Black,M,FALSE,0,N,95.4,NA,452,2026-05-08, 8:50am ,AM,65,No,Standard,N,1,Complete
+S140,8th,Black,Male,Y,TRUE,FALSE,0.857,501,513,05/11/2026,13:15,PM,63,N,Standard,N,1,Complete
+S082, 6 ,white, Female ,, No ,FALSE,0.996,449,489,2026-04-24,08:45,Afternoon,44, No ,Standard,no,1,Complete
+S047, 6 ,White, Male , No ,N, No ,0.958, 415 ,463,2026-04-20,10:20,a.m.,40,No,Standard,N,1,Complete
+S116,07,asian, Male , No ,No,No,98.3,426,468,2026-04-30, 10:40am ,Morning,57, No ,Standard, No ,1,Complete
+S027,Grade 7,Black/African American, Male ,0,Yes,N,0.957,418,449,05/07/2026,,morning,64,N,Standard,1,1,Complete
+S122, 7 ,Latino/a,M,FALSE, No ,0,91.2,516,531,2026-05-18, 8:40am ,a.m.,46,N,Standard,0,1,Complete
+S147,8th,white, Female ,FALSE, No ,1,0.874,533,544,2026-05-17,09:40,Morning,79,N,Standard,FALSE,1,Complete
+S221, 7 ,White,Male, No ,no,N,0.986,436,461,2026-05-14,8:20 AM,morning,60,no,Standard,N,1,Complete
+S205,Grade 8,asian,Male, No ,N, No ,0.985,515,535,05/15/2026, 10:45am ,a.m.,66,FALSE,Standard,no,1,Complete
+S086,8th,Asian, Female ,no, No ,TRUE,0.887,445,458,2026-04-26,10:00,AM,67,FALSE,Extended time,FALSE,1,Complete
+S008, 8 ,Hispanic/Latino,F,Yes, No , No ,0.907,424,451,05/07/2026, 8:30am ,a.m.,39,no,Standard,0,1,Complete
+S235,08,African American,Male,N,no,FALSE,0.945,466,486,2026-05-12,9:40 AM,a.m.,50,0,Standard,FALSE,1,Complete
+S193,6,African American,F, No ,No,Y,0.913,417,425,2026-05-10,8:15 AM,a.m.,59,Y,Extended time, No ,1,Invalidated - interruption
+S213,08,Latino/a,Prefer not to say,Yes,Y,no,0.874,493,512,2026-05-03, 8:45am ,morning,70,No,Standard, No ,1,Complete
+S219, 6 ,Latino/a,female,yes,N,FALSE,0.935,345,391,"Apr 17, 2026",1:20 PM,After lunch,53, No ,Standard,TRUE,1,Complete
+S106,7th,Latino/a,Female,Y,0,no,0.929,478,503,04/24/2026, 8:15am ,Morning,54,0,Standard,TRUE,1,Complete
+S032,6th,Hispanic/Latino,Non-binary,1,N,FALSE,0.904,338,363,2026-05-02,,a.m.,60,N,Standard,Yes,1,Complete
+S048,Grade 7,African American,Male,Yes,0,No,90.0,374, 397 ,2026-04-18, 1:40pm ,PM,58,0,Standard,yes,1,Complete
+S159,Grade 7,Black,M,Yes,N,No,0.937,430,464,"May 18, 2026",8:10 AM,morning,66,0,Standard,1,1,Complete
+S092,07,Hispanic, Female ,N,FALSE, No ,0.941,N/A,451,2026-05-07,2:40 PM,Morning,56,Y,Standard, No ,1,Invalidated - interruption
+S072,6th,Hispanic,M,yes,No,no,0.895,344,379,"Apr 23, 2026",10:45 AM,a.m.,52 min,FALSE,Standard,0,1,Complete
+S203, 7 ,Multiracial, Male ,0,No,N,1.000,446,463,2026-05-02, 2:30pm ,After lunch,62,TRUE,Standard,No,1,Complete
+S050, 6 ,Black/African American, Female ,No, No ,no,0.945,489,516,2026-04-19,8:45 AM,Morning,52,0,Standard,No,1,Complete
+S118,7,Not Reported, Female ,no,N,Yes,0.912,459,488,05/13/2026,13:50,PM,78,no,Standard,yes,1,Complete
+S234,Grade 8,Hispanic/Latino,M,no,N,1,91%,445, 456 ,2026-04-30, 8:15am ,Morning,67,No,Standard, No ,1,Complete
+S160, 6 ,white,Female,TRUE,no,0,0.909,422,446,04/22/2026,not recorded,Morning,50,No,Standard, No ,1,Complete
+S100,Grade 8,Black, Male ,0,1,0,92.0, 437 ,467,2026-04-14, 8:50am ,a.m.,48,0,Standard,0,1,Complete
+S090, 7 ,Latino/a,Male,Y,no,0,0.932,530,549,04/21/2026, 2:00pm ,Afternoon,72,1,Standard,1,1,Complete
+S218,8th,Hispanic/Latino,M,Yes,0,Yes,0.844, 443 , 460 ,04/28/2026,8:50 AM,AM,56, No ,Standard,yes,1,Complete
+S077,08,Latino/a,female,Y,Y,N,0.897,419,442,05/17/2026, 2:15pm ,p.m.,50,FALSE,Standard,0,1,Complete
+S151,6th,asian,male,yes,Yes,FALSE,0.917, 347 ,375,05/06/2026, 12:15pm ,Morning,78,N,Standard,No,1,Complete
+S080,Grade 7,White, Male ,Y, No ,Y,0.864, 417 ,448,"May 12, 2026",09:00,Morning,57,No,Standard,TRUE,1,Complete
+S017, 6 ,Asian,Male,N,N,No,0.968,372,417,"May 02, 2026", 8:40am ,Morning,48,0,Standard,Y,1,Complete
+S229,6th,Multiracial, Male ,0, No ,Yes,0.949,395,417,05/16/2026,2:10 PM,Afternoon,66,FALSE,Standard,FALSE,1,Complete
+S179,8,Hispanic/Latino,F,No,No,Yes,0.895,531,561,05/02/2026, 10:45am ,AM,52, No ,Extended time,N,1,Complete
+S061, 7 ,Hispanic/Latino,female,Y,TRUE,Yes,0.813,411,438,2026-05-18,1:20 PM,After lunch,83,FALSE,Makeup,N,1,Complete
+S133,07,Hispanic/Latino, Female , No ,FALSE, No ,0.948, 481 ,510,05/10/2026,13:15,Afternoon,70, No ,Makeup,N,2,Complete
+S033,6th,Black,F,No, No ,FALSE,0.981,492,522,2026-05-12,13:30,p.m.,60,N,Standard,0,1,Complete
+S052, 6 ,asian,M,0, No ,0,96.3,422,463,"May 04, 2026",10:20 AM,a.m.,62,No,Standard,no,1,Complete
+S175, 7 ,Black/African American,NB,TRUE,N,0,0.917,438,454,2026-05-16, 9:00am ,Morning,64, No ,Standard,FALSE,1,Complete
+S036,6,white, Male ,no,no,No,0.961,440,461,05/13/2026, 8:00am ,a.m.,54,0,Standard,FALSE,1,Complete
+S028,08,White, Male ,N, No , No ,0.984,444,473,"Apr 23, 2026", 8:40am ,Morning,62,no,Standard,yes,1,Complete
+S089, 6 ,White,Non-binary,0,FALSE,FALSE,0.955,422,441,2026-05-13,1:00 PM,PM,61,TRUE,Standard,0,1,Complete
+S068,6th,asian, Female ,yes,FALSE,FALSE,0.902,371,407,04/22/2026, 1:15pm ,Afternoon,46,No,Standard,FALSE,1,Complete
+S202,08,Hispanic,F,Yes,yes,Yes,0.846,442,467,2026-05-17,1:10 PM,PM,87,no,Standard, No ,1,Complete
+S096, 8 ,Latino/a, Male ,0,no,N,0.989,465,494,2026-05-06,8:30 AM,a.m.,43,0,Standard,No,1,Complete
+S039,08,white,F,N,no,N,0.967,444,479,2026-04-30, 1:50pm ,Afternoon,30,no,Standard,N,1,Complete
+S028,8th,White, Male ,N,No,0,0.984,444,470,2026-04-27, 8:40am ,AM,62,0,Makeup,TRUE,2,Complete - review retest policy
+S018,7,African American,male,N, No ,,0.942,412, 438 ,05/09/2026,10:00,morning,53,No,Makeup,FALSE,2,Complete
+S130,8,white, Female ,1,no,No,0.902,502,529,04/17/2026,13:20,Afternoon,49,N,Standard,FALSE,1,Complete
+S126,Grade 7,Black/African American, Male ,no,0,0,0.951, 489 ,516,2026-04-19,12:45 PM,PM,47,N,Standard, No ,1,Complete
+S051,8,White,F,0, No ,Y,88.2,419,448,2026-04-22,1:00 PM,After lunch,66,FALSE,Standard,FALSE,1,Complete
+S057, 8 ,Latino/a, Male ,1, No ,0,0.953,482,512,04/14/2026,13:50,Morning,58,No,Standard,N,1,Complete
+S020,Grade 6,Latino/a,Female,No,FALSE,TRUE,0.929,437,462,04/26/2026,13:45,PM,75, No ,Standard,No,1,Complete
+S166,07,Not reported,M,Y,N,N,0.870,436,466,2026-05-02,10:20,a.m.,45,0,Standard,no,1,Complete
+S232,8th,Black/African American,Male,1,FALSE, No ,0.936,494,523,2026-05-14, 1:50pm ,After lunch,66,no,Standard,No,1,Complete
+S196,8,Black/African American, Female , No ,Not Reported,N,0.958,529,567,"May 11, 2026", 9:20am ,AM,54,No,Standard,0,1,Complete
+S137,Grade 6,Latino/a,M,No,yes,no,0.880,419,460,2026-04-21,09:40,Morning,54,no,Standard,no,1,Complete
+S109, 8 ,Latino/a, Male ,Yes,0,0,0.919,545,567,"Apr 19, 2026",10:00 AM,a.m.,47,FALSE,Standard,N,1,Complete
+S158,06,Black, Male ,0,no,No,0.958,420,443,2026-05-08,12:20 PM,PM,51,0,Standard,N,1,Complete
+S195, 7 ,White,Female,FALSE, No ,0,0.916,430,464,2026-05-02, 9:00am ,a.m.,44,0,Standard,0,1,Complete
+S187,Grade 8,Hispanic/Latino, Female ,1,FALSE,No,0.939,527,702,2026-05-06,13:10,Afternoon,39,No,Standard,0,1,Complete
+S105,Grade 8,African American,, No ,FALSE, No ,0.905, 447 ,470,04/24/2026,9:15 AM,a.m.,39,N,Standard,Yes,1,Complete
+S004,06,Latino/a,Male,No,no,0,0.940,443, 466 ,2026-04-23, 1:30pm ,After lunch,77,TRUE,Standard,TRUE,1,Complete
+S176,Grade 6,African American,male,Y,TRUE,0,87%,409,413,2026-04-15, 1:30pm ,After lunch,55,0,Standard,N,1,Complete
+S161, 8 ,Black,Male,Y,No,No,0.942,479,516,2026-04-25, 8:50am ,morning,63 min,N,Standard,yes,1,Complete
+S168, 7 ,white, Female ,0,N,FALSE,0.900,469,496,2026-05-09,14:00,PM,46, No ,Standard, No ,1,Complete
+S186,7th,Two or more races,M,0,N,Not Reported,0.982,519,556,"May 02, 2026",13:00,After lunch,69 min,FALSE,Standard,FALSE,1,Complete
+S141,Grade 8,Latino/a, Male ,0,no,FALSE,0.945,494,515,2026-05-16,2:40 PM,Afternoon,50,FALSE,Standard,Y,1,Complete
+S060, 6 ,White, Male ,0,0,FALSE,0.965, 429 ,460,2026-04-15,14:50,Afternoon,66,FALSE,Standard,0,1,Complete
+S217,6,Hispanic/Latino, Male ,TRUE,no,FALSE,0.952,392,421,05/14/2026, 8:30am ,Morning,60 min,FALSE,Standard,no,1,Complete
+S053,Grade 7,Latino/a,Nonbinary,1,No,no,0.925,471,484,"May 13, 2026",1:30 PM,PM,62 min,FALSE,Standard,N,1,Complete
+S172,08,Asian,M,no,FALSE,0,0.931,454,464,"May 01, 2026",13:00,PM,49,no,Standard,0,1,Complete
+S014,6,, Male ,TRUE,FALSE,Yes,0.914,359,374,2026-04-23,1:40 PM,After lunch,84,TRUE,Standard,No,1,Complete
+S236,06,Black,Nonbinary,Y,yes,N,0.870,377,410,"May 13, 2026",08:10,a.m.,265,N,Standard,TRUE,1,Complete
+S064, 7 ,African American,M,no,TRUE,yes,0.906,400,437,05/17/2026, 8:15am ,Morning,73,N,Extended time,0,1,Complete
+S207, 7 ,Latino/a,F,, No ,no,1.000,398,429,2026-05-10,09:30,a.m.,57,No,Standard,N,1,Complete
+S030,7th,Asian,F,No,No, No ,0.967,487,511,2026-05-04,1:20 PM,Afternoon,71,N,Standard,N,1,Complete
+S049,6th,Multiracial, Male ,FALSE,no,No,0.958,401,427,2026-04-19,12:40 PM,PM,56,FALSE,Standard,no,1,Complete
+S087,7th,white,M,FALSE,FALSE,No,0.951,458,,04/21/2026, 9:10am ,morning,60,No,Standard,No,1,Complete
+S054, 8 ,White,F,yes, No ,TRUE,0.887,407,426,05/13/2026,2:45 PM,Morning,4,N,Standard,no,1,Complete
+S136,Grade 6,Declined, Male , No ,Y,No,0.847,373,402,2026-05-17, 8:20am ,AM,62,0,Standard,0,1,Complete
+S093,08,Hispanic,Male,FALSE,N, No ,94.9,362,392,2026-04-22,10:30,Morning,65,N,Standard,Y,1,Complete
+S005,6th,Hispanic,Female,yes, No ,No,0.908,418,447,2026-04-14,09:20,Morning,42,0,Standard,yes,1,Complete
+S133,7,Hispanic,Female,FALSE,N,No,95%,481,498,05/03/2026,09:45,Morning,66,yes,Standard,N,1,Invalidated - interruption
+S078,07,Hispanic/Latino,female,No,TRUE,no,0.940,455,473,2026-05-01, 9:20am ,a.m.,64 min, No ,Standard,FALSE,1,Complete
+S041,6,White,male,0,No,1,91.8,407,418,2026-04-20,08:00,AM,78, No ,Standard,N,1,Complete
+S204,8,Latino/a,male,FALSE,N,N,0.964,479,522,"Apr 20, 2026",10:10,AM,56,FALSE,Standard,0,1,Complete
+S157,7th,white,female,0,Yes,Y,0.920,377,401,2026-05-10, 9:40am ,Afternoon,72,no,Extended time,0,1,Complete
+S200,08,Black, Female ,Y,No,N,84.2,472,492,"May 02, 2026", 1:30pm ,Afternoon,62,No,Standard,yes,1,Complete
+S075,7,White,Male,N,No, No ,0.957,430,475,"Apr 14, 2026", 10:40am ,Morning,46,No,Standard,no,1,Complete
+S220,7,White,F,FALSE,N,No,0.983,439,460,2026-05-21, 2:40pm ,After lunch,61,0,Standard,no,1,Complete
+S059,6,White,Male,TRUE,1,Y,86.8,399, 410 ,2026-05-04,08:40,a.m.,72,Yes,Standard,0,1,Complete
+S238, 6 ,asian,Male,TRUE,no,TRUE,0.890,370,406,05/21/2026,9:45 AM,a.m.,69,no,Extended time,No,1,Complete
+S183,Grade 7,Black/African American,Male,1,no,0,0.930,419,453,05/10/2026,10:10,morning,63,N,Standard,Y,1,Complete
+S162, 7 ,White, Male ,TRUE,yes, No ,0.854,472,481,2026-04-26,14:20,After lunch,73,Yes,Standard,no,1,Complete
+S011,6,Hispanic/Latino, Male ,N,N,no,0.922,448, 491 ,2026-05-03,09:15,morning,36,FALSE,Standard,0,1,Complete
+S165,8th,Hispanic,F,1,Yes, No ,0.847,505,522,2026-05-20,09:30,a.m.,47,N,Standard,N,1,Complete
+S107,6,asian,Female,0,yes,N,-0.20,423,453,"Apr 16, 2026",8:45 AM,AM,57,no,Standard,no,1,Complete
+S127,8th,Black/African American,Non-binary,no,FALSE,Yes,0.884,470,508,2026-05-15,9:45 AM,morning,68,N,Standard,FALSE,1,Complete
+S150,06,Latino/a,male,FALSE,FALSE, No ,0.995,446,482,2026-05-04,,a.m.,54,no,Standard,N,1,Complete
+S097,Grade 7,Hispanic/Latino,female,FALSE,0,N,0.990,489,526,2026-05-16, 12:00pm ,Afternoon,48,N,Standard,FALSE,1,Complete
+S113, 7 ,Multi-racial,female,,TRUE,Yes,0.843,495,512,2026-05-19,9:20 AM,morning,92,0,Standard,Y,1,Complete
+S084,08,African American,Female,Y,0,Yes,91.4,474,491,2026-05-19,2:45 PM,PM,72,no,Standard, No ,1,Complete
+S215,6th,Latino/a,Nonbinary,N,0,N,0.964, 416 ,457,2026-05-05,08:45,morning,50, No ,Standard,FALSE,1,Complete
+S145,8th,White,Female, No ,0, No ,0.930,473,510,"May 10, 2026",2:40 PM,After lunch,58,no,Standard,FALSE,1,Complete
+S076,06,Asian,Female,No,No,0,0.954,442,466,2026-05-17, 9:50am ,a.m.,50,N,Standard,no,1,Complete
+S134,07,Multi-racial, Female ,yes,Y,N,0.876,456,471,04/27/2026,13:00,Afternoon,61, No ,Standard,no,1,Complete
+S012,08,Asian,Female,no,no,1,0.904,488,518,2026-04-29,08:40,AM,71,N,Standard,0,1,Complete
+S101,08,Hispanic,female,Yes,N,FALSE,0.891,485,506,05/04/2026,1:45 PM,After lunch,44,N,Standard,no,1,Complete
+S009, 8 ,White,F,yes,N,N,0.923,371,403,05/20/2026,1:30 PM,p.m.,50,FALSE,Standard,Yes,1,Complete
+S071,Grade 8,white,F,yes,N,no,0.925,453,492,"May 07, 2026",09:10,AM,38,no,Standard, No ,1,Complete
+S006, 7 ,Two or more races,M,yes,1,FALSE,0.893,431,453,04/29/2026,10:45 AM,AM,77 min, No ,Standard,yes,1,Complete
+S035,8th,African American,M,0,N, No ,1.000,569,603,05/05/2026,12:40,Afternoon,59, No ,Standard,yes,1,Complete
+S181,6,asian,Male,FALSE,FALSE,No,0.905,420, 446 ,2026-05-19, 9:30am ,Afternoon,64,No,Standard,no,1,Complete
+S103,Grade 7,Hispanic/Latino,female,1,0,N,0.919,350,378,2026-05-03,13:50,PM,61, No ,Standard,1,1,Complete
+S114,Grade 7,Hispanic,Non-binary,No,No,N,0.984,326,379,05/06/2026,09:40,a.m.,55,0,Standard,Y,1,Complete
+S190,7,Hispanic/Latino,Female,FALSE,no,1,0.899,481,999,2026-05-10,9:15 AM,a.m.,84,N,Makeup,FALSE,2,Complete
+S119,08,Hispanic,Not Reported,yes,no,No,0.947,451,495,2026-05-17,10:20,AM,44,N,Standard,no,1,Complete
+S003,6th,Asian,Male,0,No,no,1.000,423,456,2026-05-04,10:50,Morning,52,No,Standard,Y,1,Complete
+S094,08,asian, Male ,TRUE,no, No ,0.898,549,571,"Apr 25, 2026", 8:00am ,morning,53,No,Standard,FALSE,1,Complete
+S144,08,White,Non-binary,TRUE,1,yes,0.884,459,488,04/30/2026,10:10,AM,81,N,Standard,0,1,Complete
+S013,8th,Asian,male,Y,N,0,0.924,555,577,05/06/2026,13:30,Afternoon,38,FALSE,Standard,Y,1,Complete
+S233, 7 ,White,Female, No ,no, No ,1.000,425,462,05/07/2026,9:15 AM,morning,46,N,Standard,0,1,Complete
+S148,07,Black,Female,0, No ,No,0.958,406,433,"Apr 30, 2026", 9:50am ,morning,62,N,Standard,N,1,Complete
+S102,Grade 8,Hispanic,Nonbinary,N,N,Y,0.919,528,559,04/16/2026,8:50 AM,Morning,43,0,Extended time,yes,1,Complete
+S034,7,Black/African American, Female ,Y,FALSE,No,0.884,439,471,05/12/2026,10:00 AM,morning,53,FALSE,Standard,Yes,1,Complete
+S104,Grade 7,Hispanic,female,FALSE,Unknown,FALSE,0.922,482,514,2026-05-15,09:30,a.m.,64,1,Standard,N,1,Complete
+S211,8,Latino/a,M,no, No ,no,0.960,464,497,2026-05-14, 8:20am ,morning,37, No ,Standard,TRUE,1,Complete
+S079, 6 ,White,Female,Yes,FALSE,N,0.913, 517 ,542,2026-05-03, 1:40pm ,PM,62,N,Standard,FALSE,1,Complete
+S115, 6 ,Two or more races,Female,1,Not Reported,yes,0.871,384,416,"Apr 29, 2026", 9:50am ,morning,69,No,Standard,Yes,1,Complete
+S019,6,white,female,1,0,1,85.5,379,405,"Apr 25, 2026",13:45,p.m.,65 min,FALSE,Extended time,Y,1,Complete
+S010,Grade 7,African American,Male,yes,FALSE, No ,0.944,—,442,05/07/2026,14:40,After lunch,67,yes,Standard, No ,1,Complete
+S138,6th,Latino/a,F, No ,FALSE,0,0.940,421,446,"Apr 22, 2026",09:10,AM,56,0,Standard,FALSE,1,Complete
+S161,8,Black,male,Y,no,FALSE,0.942,479,519,04/29/2026,8:50 AM,morning,63,No,Makeup,yes,2,Complete - review retest policy
+S111,7th,White,NB,No,N,0,0.963,514,534,04/21/2026,10:50,Morning,59,No,Standard,0,1,Complete
+S208,06,Not Reported,Male, No , No ,0,0.921,469,N/A,2026-04-24,9:40 AM,Morning,68,N,Standard,0,1,Complete
+S152, 8 ,White,Male,N, No ,1,0.929, 446 ,491,"May 15, 2026",8:20 AM,Morning,65, No ,Standard,no,1,Complete
+S197,8,African American,Male,No,0,1,0.918,430,455,04/30/2026, 8:45am ,morning,74,FALSE,Extended time,N,1,Complete
+S178, 6 ,Asian,M,N,N,Unknown,93.2,422,454,2026-04-16,09:30,AM,55, No ,Standard, No ,1,Complete
+S046, 7 ,Hispanic/Latino,male,TRUE, No ,0,0.909,427,448,"May 17, 2026",12:30 PM,After lunch,54,N,Standard,N,1,Complete
+S237,Grade 8,Multiracial,F,N,N,1,0.916,495,528,05/06/2026,1:45 PM,After lunch,72,no,Standard,N,1,Complete
+S223,7th,White,Female,Yes,0,FALSE,0.903,485,493,2026-04-19,10:00 AM,morning,420,TRUE,Standard,N,1,Complete
+S199,8th,Black/African American,M,FALSE,Y,no,0.928,490,505,"Apr 22, 2026",09:15,morning,72 min, No ,Standard,FALSE,1,Complete
+S185,7th,White,Male,yes,Yes,N,90.2,422,470,"May 12, 2026",09:15,a.m.,58,0,Standard,N,1,Complete
+S146,06,Latino/a,F,1,TRUE,FALSE,0.922,467,496,2026-05-18,13:40,p.m.,59,No,Standard,TRUE,1,Complete
+S055,08,Latino/a, Female ,no,,0,0.916,521,556,2026-05-15,9:10 AM,Morning,50, No ,Standard,1,1,Complete
+S149,Grade 7,White,F,Yes, No ,No,0.853,435,477,05/20/2026,8:30 AM,a.m.,60,N,Standard,FALSE,1,Complete
+S026, 6 ,white,F,1,No,Y,0.893,absent,431,04/26/2026, 1:10pm ,After lunch,50,no,Extended time,Yes,1,Complete
+S098,7,asian,male,no,no, No ,0.951,525,555,05/01/2026, 9:00am ,a.m.,43,FALSE,Standard,0,1,Complete
+S117, 7 ,Black/African American,female,FALSE, No ,FALSE,0.939,421,440,04/30/2026,10:10 AM,a.m.,70,No,Standard,No,1,Complete

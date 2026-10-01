@@ -9,6 +9,7 @@ Before changing the environment or notebooks, read:
 1. `README.md`
 2. `docs/agent-environment-guide.md`
 3. `requirements.txt`
+4. `docs/facilitator-group-cleaning-lab.md` when changing lesson 05 or its synthetic dataset
 
 ## Data boundary
 
@@ -48,3 +49,4 @@ Follow the detailed recipes and recovery steps in `docs/agent-environment-guide.
 - `python scripts/build_site.py` renders saved outputs; it must not execute notebooks.
 - `_site/` is generated and must remain uncommitted.
 - Run the site build and link validation after changing documentation, notebooks, downloads, or navigation.
+- Regenerate lesson 05 only with `scripts/generate_messy_assessment_data.py` and `scripts/build_group_cleaning_lab.py`; the committed CSV must remain deterministic, and saved notebook outputs must remain error-free.

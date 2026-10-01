@@ -1,0 +1,20 @@
+column,description,intended_type,cleaning_note
+student_key,Synthetic pseudonymous student key; not an anonymization method,string,One logical record per student after applying attempt policy
+grade,Current enrolled grade,category,"Expected grades 6, 7, or 8; labels are inconsistent"
+race_ethnicity,Synthetic reported race/ethnicity category,category,Labels require policy-aware normalization; some values are unreported
+gender,Synthetic reported gender category,category,Labels require normalization; preserve nonresponse
+economically_disadvantaged,Synthetic economic-disadvantage eligibility indicator,category,Yes/No/unknown represented inconsistently
+mll,Synthetic multilingual-learner indicator,category,Yes/No/unknown represented inconsistently
+iep,Synthetic individualized education program indicator,category,Yes/No/unknown represented inconsistently
+attendance_rate,Year-to-date attendance,numeric,"Mixed proportion, percentage, percent-string, missing, and invalid representations"
+fall_score,Fall mathematics scale score,numeric,Expected operational range 100–800; stored as messy strings
+spring_score,Spring mathematics scale score,numeric,Expected operational range 100–800; stored as messy strings
+test_date,Spring assessment administration date,date,Multiple date formats plus an invalid value
+test_start_time,Local start time for the spring assessment,time,"12-hour, 24-hour, missing, and whitespace variants"
+time_of_day,Source-system morning/afternoon label,category,Some labels conflict with parseable start times
+duration_minutes,Recorded assessment duration in minutes,numeric,"Text suffixes, missingness, and contextual outliers"
+device_interruption,Whether a device interruption was recorded,category,Yes/No represented inconsistently
+administration_type,"Standard, makeup, or extended-time administration",category,Use when interpreting duration and schedule
+after_school_program,Synthetic participation in an after-school support program,category,Targeted participation; not randomly assigned
+attempt,Administration attempt number,integer,Some students have multiple attempts
+record_status,Completion or invalidation status,category,Use with attempt and local policy to select records

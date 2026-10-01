@@ -77,7 +77,7 @@ duti -s org.jupyter.jupyterlab-desktop .ipynb all
 Run these checks from the workshop root:
 
 ```bash
-.venv/bin/python -c "import IPython, ipywidgets, jupyterlab, matplotlib, nbformat, numpy, pandas, seaborn; print('Workshop imports: OK')"
+.venv/bin/python -c "import IPython, ipywidgets, jupyterlab, matplotlib, nbformat, numpy, pandas, seaborn, statsmodels; print('Workshop imports: OK')"
 
 JLAB_CLI="$(command -v jlab || true)"
 if [[ -z "$JLAB_CLI" ]]; then

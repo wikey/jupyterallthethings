@@ -58,20 +58,34 @@ LESSONS = (
         "title": "Create a presentation view",
         "description": "Turn reviewed analyses into an aggregate, presentation-ready dashboard.",
     },
+    {
+        "source": "05_group_data_cleaning_lab.ipynb",
+        "slug": "05-group-data-cleaning-lab.html",
+        "number": "05",
+        "title": "Clean messy data together",
+        "description": "Make visible decisions about duplicates, normalization, outliers, subgroups, and adjusted associations.",
+    },
 )
 
 DATA_FILES = (
     "FakeiReadyData.csv",
     "FakeiReadyMathData.csv",
     "FakeiReadySchema.csv",
+    "MessyAssessmentData.csv",
+    "MessyAssessmentDataSchema.csv",
 )
 
 PACKAGE_FILES = (
     "AGENTS.md",
     "README.md",
     "requirements.txt",
+    "assets/site.css",
     "docs/agent-environment-guide.md",
+    "docs/facilitator-group-cleaning-lab.md",
     "prompts/macos-setup-agent-prompt.md",
+    "scripts/build_group_cleaning_lab.py",
+    "scripts/build_site.py",
+    "scripts/generate_messy_assessment_data.py",
     "scripts/setup_macos.sh",
     *DATA_FILES,
     *(f"notebooks/{lesson['source']}" for lesson in LESSONS),
@@ -265,7 +279,7 @@ def home_page() -> str:
 
     <section class="section" id="lessons">
       <div class="section-heading">
-        <p class="eyebrow">Five-part sequence</p>
+        <p class="eyebrow">Six-part sequence</p>
         <h2>Follow the analysis from question to presentation</h2>
         <p>The rendered lessons show saved results and require no setup. To edit or rerun the analysis, download the workshop and open the notebooks locally.</p>
       </div>
@@ -321,6 +335,16 @@ def home_page() -> str:
           <span class="download-card__type">CSV</span>
           <strong>Data schema</strong>
           <span>Field names and structure</span>
+        </a>
+        <a class="download-card" href="downloads/MessyAssessmentData.csv" download>
+          <span class="download-card__type">CSV</span>
+          <strong>Messy group-lab data</strong>
+          <span>Deliberately inconsistent synthetic assessment records</span>
+        </a>
+        <a class="download-card" href="downloads/MessyAssessmentDataSchema.csv" download>
+          <span class="download-card__type">CSV</span>
+          <strong>Messy-data schema</strong>
+          <span>Expected fields, types, and cleaning notes</span>
         </a>
         <a class="download-card" href="downloads/macos-setup-agent-prompt.md" download>
           <span class="download-card__type">PROMPT</span>
